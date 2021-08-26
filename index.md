@@ -395,6 +395,7 @@ to include the relevant installation instrucctions.
 {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
+{% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
