@@ -238,7 +238,7 @@ Display the contact email address set in the configuration file.
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
-{% comment %}
+{% endcomment %}
 
 {% comment %}
 WHO CAN ATTEND?
@@ -388,6 +388,7 @@ If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instrucctions.
 {% endcomment %}
+
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
@@ -397,6 +398,7 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
+{% comment %}
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
