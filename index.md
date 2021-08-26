@@ -410,9 +410,8 @@ to obtain the software and data you will need to follow the lesson.
 {% endcomment %}
 To set up for the Unix Shell and Python sections of the workshop,
 download the data from the section Setup pages:
-<u>
+
   <li> The Unix Shell <a href = "http://swcarpentry.github.io/shell-novice/setup.html">Setup pages</a></li>
   <li> Python Programming <a href = "https://swcarpentry.github.io/python-novice-inflammation/setup.html">Setup pages</a></li>
- 
   
 
