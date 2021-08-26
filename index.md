@@ -10,7 +10,7 @@ language: "en"     # lowercase two-letter ISO language code such as "fr" (see ht
 latitude: "0"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "0"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Sep 4-11-18-25, 2021 "    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "2:00 PM - 4:30 PM "    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "2:30 PM - 5:30 PM "    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-09-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-09-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Swabir Silayi"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -368,7 +368,14 @@ please preview your site before committing, and make sure to run
 {% endcomment %}
 
 <h2 id="setup">Setup</h2>
+<p>
+  To participate in the ORC Python for HPC workshop, you will need
+  to have attended the ORC New User Tutorial. In addition, you will need an up-to-date web browser.
+  
+  
+ </p>
 
+{% comment %}
 <p>
   To participate in a
   {% if site.carpentry == "swc" %}
@@ -387,12 +394,14 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+{% endcomment %}
+
 
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
 - recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
+  the instructions and the videoconferencing 
 
 If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
@@ -405,7 +414,6 @@ to include the relevant installation instrucctions.
 {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
-{% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
@@ -418,3 +426,12 @@ Please check the "Setup" page of
 [the lesson site]({{ site.lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+{% endcomment %}
+To set up for the Unix Shell and Python sections of the workshop,
+download the data from the section Setup pages:
+<u>
+  <li> The Unix Shell <a href = "http://swcarpentry.github.io/shell-novice/setup.html">Setup pages</a></li>
+  <li> Python Programming <a href = "https://swcarpentry.github.io/python-novice-inflammation/setup.html">Setup pages</a></li>
+ </u>
+  
+
