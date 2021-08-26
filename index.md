@@ -265,7 +265,7 @@ Edit the text to match who can attend the workshop. For instance:
 
 {% comment%}
 CODE OF CONDUCT
-{% endcomment %}
+
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
@@ -278,7 +278,7 @@ Everyone who participates in Carpentries activities is required to conform to th
   </a>
 </p>
 <hr/>
-
+{% endcomment %}
 
 {% comment %}
 Collaborative Notes
@@ -305,7 +305,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
+
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "pilot" %}
@@ -324,6 +324,8 @@ change the value of `carpentry` to `pilot`.
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %}
+
+{% endcomment %}
 
 <hr/>
 
@@ -434,6 +436,6 @@ download the data from the section Setup pages:
 <u>
   <li> The Unix Shell <a href = "http://swcarpentry.github.io/shell-novice/setup.html">Setup pages</a></li>
   <li> Python Programming <a href = "https://swcarpentry.github.io/python-novice-inflammation/setup.html">Setup pages</a></li>
- </u>
+ 
   
 
